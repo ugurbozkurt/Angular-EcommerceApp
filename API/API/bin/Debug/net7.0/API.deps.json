@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v7.0": {
       "API/1.0.0": {
         "dependencies": {
-          "API.DATA": "1.0.0",
+          "API.CORE": "1.0.0",
+          "API.Infrastructure": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "7.0.7",
           "Microsoft.EntityFrameworkCore": "7.0.8",
           "Microsoft.EntityFrameworkCore.Design": "7.0.8",
@@ -675,13 +676,19 @@
           }
         }
       },
-      "API.DATA/1.0.0": {
+      "API.CORE/1.0.0": {
+        "runtime": {
+          "API.CORE.dll": {}
+        }
+      },
+      "API.Infrastructure/1.0.0": {
         "dependencies": {
+          "API.CORE": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.8"
         },
         "runtime": {
-          "API.DATA.dll": {}
+          "API.Infrastructure.dll": {}
         }
       }
     }
@@ -1210,7 +1217,12 @@
       "path": "system.windows.extensions/5.0.0",
       "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
     },
-    "API.DATA/1.0.0": {
+    "API.CORE/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "API.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

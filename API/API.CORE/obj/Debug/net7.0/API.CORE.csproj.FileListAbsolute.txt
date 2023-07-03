@@ -1,0 +1,12 @@
+C:\Users\Kallax\Desktop\AngularProjelerim\ecommerceApp\API\API.CORE\bin\Debug\net7.0\API.CORE.deps.json
+C:\Users\Kallax\Desktop\AngularProjelerim\ecommerceApp\API\API.CORE\bin\Debug\net7.0\API.CORE.dll
+C:\Users\Kallax\Desktop\AngularProjelerim\ecommerceApp\API\API.CORE\bin\Debug\net7.0\API.CORE.pdb
+C:\Users\Kallax\Desktop\AngularProjelerim\ecommerceApp\API\API.CORE\obj\Debug\net7.0\API.CORE.csproj.AssemblyReference.cache
+C:\Users\Kallax\Desktop\AngularProjelerim\ecommerceApp\API\API.CORE\obj\Debug\net7.0\API.CORE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kallax\Desktop\AngularProjelerim\ecommerceApp\API\API.CORE\obj\Debug\net7.0\API.CORE.AssemblyInfoInputs.cache
+C:\Users\Kallax\Desktop\AngularProjelerim\ecommerceApp\API\API.CORE\obj\Debug\net7.0\API.CORE.AssemblyInfo.cs
+C:\Users\Kallax\Desktop\AngularProjelerim\ecommerceApp\API\API.CORE\obj\Debug\net7.0\API.CORE.csproj.CoreCompileInputs.cache
+C:\Users\Kallax\Desktop\AngularProjelerim\ecommerceApp\API\API.CORE\obj\Debug\net7.0\API.CORE.dll
+C:\Users\Kallax\Desktop\AngularProjelerim\ecommerceApp\API\API.CORE\obj\Debug\net7.0\refint\API.CORE.dll
+C:\Users\Kallax\Desktop\AngularProjelerim\ecommerceApp\API\API.CORE\obj\Debug\net7.0\API.CORE.pdb
+C:\Users\Kallax\Desktop\AngularProjelerim\ecommerceApp\API\API.CORE\obj\Debug\net7.0\ref\API.CORE.dll

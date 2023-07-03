@@ -4,14 +4,14 @@
     "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API.DATA\\API.DATA.csproj": {
+    "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API.CORE\\API.CORE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API.DATA\\API.DATA.csproj",
-        "projectName": "API.DATA",
-        "projectPath": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API.DATA\\API.DATA.csproj",
+        "projectUniqueName": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API.CORE\\API.CORE.csproj",
+        "projectName": "API.CORE",
+        "projectPath": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API.CORE\\API.CORE.csproj",
         "packagesPath": "C:\\Users\\Kallax\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API.DATA\\obj\\",
+        "outputPath": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API.CORE\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Kallax\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,6 +28,65 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API.Infrastructure\\API.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API.Infrastructure\\API.Infrastructure.csproj",
+        "projectName": "API.Infrastructure",
+        "projectPath": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API.Infrastructure\\API.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Kallax\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Kallax\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API.CORE\\API.CORE.csproj": {
+                "projectPath": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API.CORE\\API.CORE.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -77,7 +136,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400-preview.23274.1\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -99,14 +158,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API.DATA\\API.DATA.csproj": {
-                "projectPath": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API.DATA\\API.DATA.csproj"
+              "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API.CORE\\API.CORE.csproj": {
+                "projectPath": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API.CORE\\API.CORE.csproj"
+              },
+              "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API.Infrastructure\\API.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API.Infrastructure\\API.Infrastructure.csproj"
               }
             }
           }
@@ -169,7 +232,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400-preview.23274.1\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }
