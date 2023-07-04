@@ -1,5 +1,4 @@
 ﻿using API.Core.DbModels;
-using API.CORE.DbModels;
 using Microsoft.EntityFrameworkCore;
 namespace API.Infrastructure.DataContext
 {

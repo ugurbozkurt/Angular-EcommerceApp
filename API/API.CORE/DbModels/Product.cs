@@ -1,8 +1,7 @@
 ﻿using API.Core.DbModels;
-using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace API.CORE.DbModels
+namespace API.Core.DbModels
 {
     public class Product : BaseEntity
     {

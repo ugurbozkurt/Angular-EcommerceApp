@@ -1,6 +1,5 @@
 ﻿using API.Core.DbModels;
 using API.Core.Interfaces;
-using API.CORE.DbModels;
 using API.Infrastructure.DataContext;
 using Microsoft.EntityFrameworkCore;
 namespace API.Infrastructure.Implements

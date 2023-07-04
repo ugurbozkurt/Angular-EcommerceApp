@@ -1,10 +1,6 @@
-﻿using API.Infrastructure.DataContext;
-using API.CORE.DbModels;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Identity.Client;
+﻿using API.Core.DbModels;
 using API.Core.Interfaces;
-using API.Core.DbModels;
+using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
 {
