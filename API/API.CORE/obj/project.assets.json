@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API.CORE\\API.CORE.csproj",
-      "projectName": "API.CORE",
-      "projectPath": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API.CORE\\API.CORE.csproj",
+      "projectUniqueName": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API.CORE\\API.Core.csproj",
+      "projectName": "API.Core",
+      "projectPath": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API.CORE\\API.Core.csproj",
       "packagesPath": "C:\\Users\\Kallax\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API.CORE\\obj\\",
       "projectStyle": "PackageReference",

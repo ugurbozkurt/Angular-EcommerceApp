@@ -1133,14 +1133,14 @@
           }
         }
       },
-      "API.CORE/1.0.0": {
+      "API.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "compile": {
-          "bin/placeholder/API.CORE.dll": {}
+          "bin/placeholder/API.Core.dll": {}
         },
         "runtime": {
-          "bin/placeholder/API.CORE.dll": {}
+          "bin/placeholder/API.Core.dll": {}
         }
       }
     }
@@ -3463,15 +3463,15 @@
         "version.txt"
       ]
     },
-    "API.CORE/1.0.0": {
+    "API.Core/1.0.0": {
       "type": "project",
-      "path": "../API.CORE/API.CORE.csproj",
-      "msbuildProject": "../API.CORE/API.CORE.csproj"
+      "path": "../API.CORE/API.Core.csproj",
+      "msbuildProject": "../API.CORE/API.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "API.CORE >= 1.0.0",
+      "API.Core >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.8",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.8",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.8",
@@ -3505,8 +3505,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API.CORE\\API.CORE.csproj": {
-              "projectPath": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API.CORE\\API.CORE.csproj"
+            "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API.CORE\\API.Core.csproj": {
+              "projectPath": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API.CORE\\API.Core.csproj"
             }
           }
         }

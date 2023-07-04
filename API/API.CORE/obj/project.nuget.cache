@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8Hwt7wb79+ce2HCIOHc8RKBAbO51VaJQXoZguN6v1C+yacxfSBJmCtU954yV2dpi2fYi4rajtXkKPnx6iSAEDw==",
+  "dgSpecHash": "A0jHXYYsLc4hmQTR12sqE4r+peyaQ29eyjC7ynez/F8WzsGaBDrvpLYZSgGq6xS2rUtwzcTXaa0r0y/7p4M08w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API.CORE\\API.CORE.csproj",
+  "projectFilePath": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API.CORE\\API.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

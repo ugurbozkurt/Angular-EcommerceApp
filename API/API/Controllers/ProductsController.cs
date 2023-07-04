@@ -3,24 +3,27 @@ using API.CORE.DbModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Identity.Client;
+using API.Core.Interfaces;
+using API.Core.DbModels;
 
 namespace API.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class ProductsController : Controller
     {
-        private readonly StoreContext _db;
-        public ProductsController(StoreContext context)
+        //private readonly StoreContext _db;
+        private readonly IProductRepository _productRepository;
+        public ProductsController(IProductRepository productRepository)
         {
-            this._db = context;
+            _productRepository = productRepository;
         }
 
 
         [HttpGet]
         public async Task<ActionResult<List<Product>>> GetAllProducts()
         {
-            var data = await this._db.Products.ToListAsync();
+            var data = await _productRepository.GetProductAsync();
             return Ok(data);
         }   
 
@@ -28,8 +31,21 @@ namespace API.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<List<Product>>> GetProductById(int id)
         {
-            var selection_product_data = await this._db.Products.FindAsync(id);
+            var selection_product_data = await _productRepository.GetProductByIdAsync(id);
             return Ok(selection_product_data);
-        }   
+        }
+
+        [HttpGet("brands")]
+        public async Task<ActionResult<IReadOnlyList<List<ProductBrand>>>> GetProductBrands()
+        {
+            var selection_product_data = await _productRepository.GetProductBrandAsync();
+            return Ok(selection_product_data);
+        }
+        [HttpGet("types")]
+        public async Task<ActionResult<IReadOnlyList<List<ProductType>>>> GetProductTypes()
+        {
+            var selection_product_data = await _productRepository.GetProductTypeAsync();
+            return Ok(selection_product_data);
+        }
     }
 }
