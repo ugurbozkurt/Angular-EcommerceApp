@@ -5,18 +5,18 @@ namespace API.Core.DbModels
 {
     public class Product : BaseEntity
     {
-        public string ProductName { get; set; } = string.Empty;
-        public string Description { get; set; } = string.Empty;
-        public decimal Price { get; set; }
-        public string PictureUrl { get; set; } = string.Empty;
+        public string? ProductName { get; set; } = null;
+        public string? Description { get; set; } = null;
+        public decimal? Price { get; set; }
+        public string? PictureUrl { get; set; } = null;
 
         [ForeignKey("ProductType")]
-        public int ProductTypeId { get; set; }
-        public ProductType? ProductType { get; set; }
+        public int? ProductTypeId { get; set; }
+        public ProductType? ProductType { get; set; } = null;
         
         [ForeignKey("ProductBrand")]
-        public int ProductBrandId { get; set; }
-        public ProductBrand? ProductBrand { get; set; }
+        public int? ProductBrandId { get; set; }
+        public ProductBrand? ProductBrand { get; set; } = null;
         
     }
 }

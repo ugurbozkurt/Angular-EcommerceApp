@@ -6,11 +6,18 @@ namespace API.Infrastructure.Implements
 {
     public class ProductRepository : IProductRepository
     {
-        private readonly StoreContext _context;
+        private readonly StoreContext _db;
         public ProductRepository(StoreContext context)
         {
-            this._context = context;
+            this._db = context;
         }
+        public async Task<IReadOnlyList<Product>> GetProductAsync()
+        {
+            return await _db.Products.
+            Include(p => p.ProductType).
+            Include(p => p.ProductBrand).ToListAsync();
+        }
+
         /// <summary>
         /// Get Prodcut By Id
         /// </summary>
@@ -18,25 +25,22 @@ namespace API.Infrastructure.Implements
         /// <returns></returns>
         public async Task<Product> GetProductByIdAsync(int id)
         {
-            return await _context.Products.FindAsync(id);
+            return await this._db.Products.Include(p => p.ProductType).Include(p => p.ProductBrand).FirstOrDefaultAsync(p => p.Id == id);
         }
         /// <summary>
         /// All Product List
         /// </summary>
         /// <returns></returns>
-        public async Task<IReadOnlyList<Product>> GetProductAsync()
-        {
-            return await _context.Products.ToListAsync();
-        }
+
 
         public async Task<IReadOnlyList<ProductBrand>> GetProductBrandAsync()
         {
-           return await _context.ProductBrands.ToListAsync();
+           return await _db.ProductBrands.ToListAsync();
         }
 
         public async Task<IReadOnlyList<ProductType>> GetProductTypeAsync()
         {
-            return await _context.ProductTypes.ToListAsync();
+            return await _db.ProductTypes.ToListAsync();
         }
     }
 }

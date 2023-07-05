@@ -7,7 +7,6 @@ namespace API.Core.Interfaces
     /// </summary>
     public interface IProductRepository
     {
-
         Task<Product> GetProductByIdAsync (int id);
         Task<IReadOnlyList<Product>> GetProductAsync();
         Task<IReadOnlyList<ProductBrand>> GetProductBrandAsync();
