@@ -1,4 +1,5 @@
-﻿using API.Infrastructure.DataContext;
+﻿using API.Errors;
+using API.Infrastructure.DataContext;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
@@ -20,7 +21,7 @@ namespace API.Controllers
         [HttpGet("badrequest")]
         public ActionResult GetBadRequest()
         {
-            return BadRequest();
+            return BadRequest(new ApiResponse(400));
         }
         [HttpGet("badrequest/{id}")]
         public ActionResult GetBadRequest(int id)
@@ -33,7 +34,7 @@ namespace API.Controllers
             var product = _db.Products.Find(42);
             if (product == null)
             {
-                return NotFound();
+                return NotFound(new ApiResponse(404));
             }
             return Ok();
         }
