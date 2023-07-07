@@ -11,6 +11,7 @@ namespace API.Controllers
         {
             _db = context;
         }
+
         [HttpGet("servererror")]
         public ActionResult GetServerError()
         {
@@ -18,6 +19,7 @@ namespace API.Controllers
             var productToReturn = product.ToString();
             return Ok();
         }
+
         [HttpGet("badrequest")]
         public ActionResult GetBadRequest()
         {
@@ -28,6 +30,7 @@ namespace API.Controllers
         {
             return Ok();
         }
+
         [HttpGet("notfound")]
         public ActionResult GetNotFoundRequest()
         {

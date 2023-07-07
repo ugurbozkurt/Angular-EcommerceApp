@@ -3,7 +3,7 @@
     public class ApiResponse
     {
         public int StatusCode { get; set; }
-        public String  Message { get; set; }
+        public string  Message { get; set; }
         public ApiResponse(int statusCode, string message = null)
         {
             StatusCode = statusCode;
@@ -22,7 +22,7 @@
                     errorMEssage = "Authorized erorr";
                     break;
                 case 404:   
-                    errorMEssage = "Resource not found";
+                    errorMEssage = "Kaynak dosya bulunamadi";
                     break;
                 case 500:
                     errorMEssage = "Server error";
