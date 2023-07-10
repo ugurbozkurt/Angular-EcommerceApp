@@ -15,7 +15,7 @@ namespace API.Controllers
         [HttpGet("servererror")]
         public ActionResult GetServerError()
         {
-            var product = _db.Products.Find(42);
+            var product = _db.Products.Find(42)!;
             var productToReturn = product.ToString();
             return Ok();
         }
