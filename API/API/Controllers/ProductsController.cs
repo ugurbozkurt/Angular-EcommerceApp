@@ -10,7 +10,7 @@ namespace API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class ProductsController : BaseApiController
+    public class ProductsController : ControllerBase
     {
         //private readonly StoreContext _db;
 
@@ -50,19 +50,8 @@ namespace API.Controllers
         {
             var spec = new ProductWithProductTypeAndProductBrandISpecification(id);
 
-            //return await _productRepository.GetEntityWithSpec(spec);
             var product_data = await _productRepository.GetEntityWithSpec(spec);
-            //return new ProductToReturnDto
-            //{
-            //    Id = product_data.Id,
-            //    ProductName = product_data.ProductName,
-            //    Description = product_data.Description,
-            //    PictureUrl = product_data.PictureUrl,
-            //    Price = product_data.Price,
-            //    ProductBrand = product_data.ProductBrand != null ? product_data.ProductBrand.Name : string.Empty,
-            //    ProductType = product_data.ProductType != null ? product_data.ProductType.Name : string.Empty
 
-            //};
             return _mapper.Map<Product, ProductToReturnDto>(product_data);
         }
 
@@ -72,11 +61,20 @@ namespace API.Controllers
             var selection_product_data = await _productBrandRepository.ListAllAsync();
             return Ok(selection_product_data);
         }
+
+
         [HttpGet("types")]
         public async Task<ActionResult<IReadOnlyList<List<ProductType>>>> GetProductTypes()
         {
             var selection_product_data = await _productTypeRepository.ListAllAsync();
             return Ok(selection_product_data);
+        }
+
+
+        [HttpGet("test")]
+        public IActionResult Test()
+        {
+              return Ok("Test");
         }
     }
 }

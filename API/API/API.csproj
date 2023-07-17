@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -26,6 +26,13 @@
   <ItemGroup>
     <ProjectReference Include="..\API.CORE\API.Core.csproj" />
     <ProjectReference Include="..\API.Infrastructure\API.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\products\hot.png" />
+    <None Include="wwwroot\images\products\polo-shirt.png" />
+    <None Include="wwwroot\images\products\shampoo.png" />
+    <None Include="wwwroot\images\products\shoe.png" />
   </ItemGroup>
 
 </Project>

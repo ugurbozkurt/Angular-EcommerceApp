@@ -1,0 +1,57 @@
+<style>
+    .active {
+        background-color: orange;
+        border:1px solid orange;
+    }
+</style>
+<div class="container">
+    <div class="row">
+        <section class="col-3">
+            <h5 class="text-warning ml-3">Sort</h5>
+            <select class="form-select mb-3 my-3" aria-label="Default select example">
+                <option selected>Alphabetical</option>
+                <option >Price : Low to High</option>
+                <option >Price : High to Low </option>
+              </select>
+            <ul class="list-group">
+                <h5 class="text-warning ml-3">Brands</h5>
+                <li class="list-group-item active">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Morbi leo risus</li>
+                <li class="list-group-item">Porta ac consectetur ac</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+
+            <ul class="list-group">
+                <h5 class="text-warning ml-3 mt-3">Types</h5>
+                <li class="list-group-item active">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Morbi leo risus</li>
+                <li class="list-group-item">Porta ac consectetur ac</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+        </section>
+        <section class="col-9">
+
+            <div class="d-flex justify-content-between align-items-center pb-2">
+                <header>
+                    <span>Showing <strong>10</strong> of <strong>18</strong> results.</span> 
+                </header>
+              
+                <div class="form-inline mt-2">
+                    <input class="form-control" style="width: 300px;" placeholder="Search" type="text">
+                    
+                </div>
+                <button class="btn btn-outline-primary mt-2">Search</button>
+  
+            </div>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col-3" *ngFor="let product of products">
+                    <app-product-item [product]="product"></app-product-item>
+                </div> 
+            </div>
+        </section>
+
+    </div>
+</div>

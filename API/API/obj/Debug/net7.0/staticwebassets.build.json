@@ -1,11 +1,88 @@
 {
   "Version": 1,
-  "Hash": "bUm1vPqwZHJejLhtNIB7WgmMI8ngxypkYrDApg4MvgQ=",
+  "Hash": "vBp2qAQxjhnux+O0T+9gnZ56/vPVsyLNTnyZkLlX9cI=",
   "Source": "API",
   "BasePath": "_content/API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "API\\wwwroot",
+      "Source": "API",
+      "ContentRoot": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API\\wwwroot\\",
+      "BasePath": "_content/API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API\\wwwroot\\images\\products\\hot.png",
+      "SourceId": "API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API\\wwwroot\\",
+      "BasePath": "_content/API",
+      "RelativePath": "images/products/hot.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\hot.png"
+    },
+    {
+      "Identity": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API\\wwwroot\\images\\products\\polo-shirt.png",
+      "SourceId": "API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API\\wwwroot\\",
+      "BasePath": "_content/API",
+      "RelativePath": "images/products/polo-shirt.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\polo-shirt.png"
+    },
+    {
+      "Identity": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API\\wwwroot\\images\\products\\shampoo.png",
+      "SourceId": "API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API\\wwwroot\\",
+      "BasePath": "_content/API",
+      "RelativePath": "images/products/shampoo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\shampoo.png"
+    },
+    {
+      "Identity": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API\\wwwroot\\images\\products\\shoe.png",
+      "SourceId": "API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API\\wwwroot\\",
+      "BasePath": "_content/API",
+      "RelativePath": "images/products/shoe.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\shoe.png"
+    }
+  ]
 }
