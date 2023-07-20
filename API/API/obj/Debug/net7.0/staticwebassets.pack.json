@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API\\wwwroot\\images\\products\\default.png",
+      "PackagePath": "staticwebassets\\images\\products\\default.png"
+    },
+    {
       "Id": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API\\wwwroot\\images\\products\\hot.png",
       "PackagePath": "staticwebassets\\images\\products\\hot.png"
     },

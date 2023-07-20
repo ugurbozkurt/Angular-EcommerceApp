@@ -9,18 +9,11 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit{
   title = 'client';
 
-  // urlproducts = 'https://localhost:7201/api/Products';
-  // products :IProduct[] = [];
-
   constructor(){}
 
   ngOnInit(): void 
   {
-  //   this.http.get(this.urlproducts).subscribe((response:any)=>{
-  //     this.products = response.data;
-  //   },error=>{
-  //     console.log(error);
-  // });
+
   } 
 
 }

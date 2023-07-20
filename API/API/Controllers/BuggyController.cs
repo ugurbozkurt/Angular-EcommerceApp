@@ -41,10 +41,6 @@ namespace API.Controllers
             }
             return Ok();
         }
-        [HttpGet("test")]
-        public ActionResult Test()
-        {
-            return Ok(3);
-        }
+
     }
 }

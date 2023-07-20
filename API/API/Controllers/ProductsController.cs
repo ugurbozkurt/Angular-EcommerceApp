@@ -71,10 +71,5 @@ namespace API.Controllers
         }
 
 
-        [HttpGet("test")]
-        public IActionResult Test()
-        {
-              return Ok("Test");
-        }
     }
 }
