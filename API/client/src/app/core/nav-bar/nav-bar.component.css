@@ -36,3 +36,14 @@ background-color: var(--bs-body-bg);
 -webkit-text-size-adjust: 100%;
 -webkit-tap-highlight-color: transparent;
 }
+a{
+    text-decoration: none;
+    color:black;
+}
+a.active{
+    color:orange;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 27px;
+    text-decoration-thickness: 2px;
+}

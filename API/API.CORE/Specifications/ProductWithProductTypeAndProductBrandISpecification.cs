@@ -11,7 +11,7 @@ namespace API.Core.Specifications
         }
         public ProductWithProductTypeAndProductBrandISpecification(ProductSpecParams productSpecParams)
             :base(x =>
-                           (string.IsNullOrWhiteSpace(productSpecParams.Search) || x.ProductName.ToLower().Contains(productSpecParams.Search)) &&
+                           (string.IsNullOrWhiteSpace(productSpecParams.Search) || x.ProductName!.ToLower().Contains(productSpecParams.Search)) &&
                            (!productSpecParams.BrandId.HasValue || x.ProductBrandId == productSpecParams.BrandId) &&
                            (!productSpecParams.TypeId.HasValue || x.ProductTypeId == productSpecParams.TypeId) 
                  )

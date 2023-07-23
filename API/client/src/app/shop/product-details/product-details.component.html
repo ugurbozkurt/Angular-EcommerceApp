@@ -1,0 +1,28 @@
+
+<div class="row" *ngIf="product">
+<div class="row">
+    <h6 class="mb-3">{{product.productBrand}} > {{product.productType}} > <a  routerLink="/shop/{{product.id}}" style="display:inline;color:orange; text-decoration: underline;text-underline-offset: 4px; cursor: pointer;">{{product.productName}}</a></h6>
+  
+    
+</div>
+    <div class="col-6">
+        <img src="{{product.pictureUrl}}" alt="{{product.productName}}" class="img-fluid w-100">
+    </div>
+    <div class="col-6" style="padding: 20px; background-color:#F5F5F5;margin-left:-12px;">
+        <h1>{{product.productName}}</h1>
+        <p>{{product.price | currency}}</p>
+        <div class="d-flex justify-content-start align-items-center">
+            <i *ngIf="quantity>1" (click)="productQuantityReduceMens()" class="fa fa-minus-circle fa-2x" style="cursor:pointer;color:orange;margin-right:5px;" ></i>
+            <span class="font-weight-bold" style="font-size: 1.5em;">{{quantity}}</span>
+            <i (click)="productQuantityIncMens()" class="fa fa-plus-circle fa-2x" style="cursor:pointer; margin-left:5px;" ></i>
+        </div>
+        <button  class="btn btn-outline-primary mt-3" style="background-color:orange;color:white;border:none;">Add to Cart</button>
+        <h6 class="mt-4" *ngIf="quantity">Total Price : {{(product.price * quantity) | currency }}</h6>
+    </div>
+    <div class="row mt-5">
+        <div class="col-12">
+            <h3>Description</h3>
+            <p>{{product.description}}</p>
+        </div>
+    </div>
+</div>
