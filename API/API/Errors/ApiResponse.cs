@@ -22,7 +22,7 @@
                     errorMEssage = "Authorized erorr";
                     break;
                 case 404:   
-                    errorMEssage = "Kaynak dosya bulunamadi";
+                    errorMEssage = "Source file not found";
                     break;
                 case 500:
                     errorMEssage = "Server error";

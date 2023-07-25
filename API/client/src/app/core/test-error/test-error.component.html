@@ -1,0 +1,11 @@
+<div class="container">
+    <button (click)="get500Error()" class="btn btn-outline-primary" style="margin-right: 20px;">500 Server Error</button>
+    <button (click)="get404Error()" class="btn btn-outline-primary" style="margin-right: 20px;">404 Not Found Error</button>
+    <button (click)="get400Error()" class="btn btn-outline-primary" style="margin-right: 20px;">400 Bad Request Error</button>
+    <button (click)="get400ValidateError()" class="btn btn-outline-primary" style="margin-right: 20px;">400 Validate Error</button>
+    <div class="row mt-5" *ngIf="validationError">
+        <ul class="text-danger">
+            <li>{{validationError}}</li>
+        </ul>
+    </div>
+</div>

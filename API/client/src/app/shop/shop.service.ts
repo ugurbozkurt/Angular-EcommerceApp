@@ -8,44 +8,46 @@ import { ShopParams } from '../shared/models/ShopParams';
 import { IProduct } from '../shared/models/IProduct';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ShopService {
   baseurl = 'https://localhost:7201/api/';
-  constructor(private http : HttpClient) { }
+  constructor(private http: HttpClient) {}
 
-
-  getProducts(shopParams:ShopParams){
-
+  getProducts(shopParams: ShopParams) {
     let params = new HttpParams();
-    if(shopParams.brandId)
-    {
-      params = params.append('brandId',shopParams.brandId.toString());
+    if (shopParams.brandId) {
+      params = params.append('brandId', shopParams.brandId.toString());
     }
-    if(shopParams.typeId)
-    {
-      params = params.append('typeId',shopParams.typeId.toString());
+    if (shopParams.typeId) {
+      params = params.append('typeId', shopParams.typeId.toString());
     }
-    params = params.append('sort',shopParams.sort);
-    params = params.append('pageIndex',shopParams.pageNumber.toString());
-    params = params.append('pageIndex',shopParams.pageSize.toString())
+    params = params.append('sort', shopParams.sort);
+    params = params.append('pageIndex', shopParams.pageNumber.toString());
+    params = params.append('pageIndex', shopParams.pageSize.toString());
 
-    if(shopParams.search)
-    {
-      params = params.append('search',shopParams.search);
+    if (shopParams.search) {
+      params = params.append('search', shopParams.search);
     }
-    return this.http.get<IPagination>(this.baseurl + 'products',{observe:'response',params})
-    .pipe(map(response =>{return response.body})
-    );
+    return this.http
+      .get<IPagination>(this.baseurl + 'products', {
+        observe: 'response',
+        params,
+      })
+      .pipe(
+        map((response) => {
+          return response.body;
+        })
+      );
   }
-  getProduct(id:number){
+  getProduct(id: number) {
     return this.http.get<IProduct>(this.baseurl + 'products/' + id);
   }
 
-  getBrands(){
+  getBrands() {
     return this.http.get<IBrand[]>(this.baseurl + 'products/brands');
   }
-  getTypes(){
+  getTypes() {
     return this.http.get<IType[]>(this.baseurl + 'products/types');
   }
 }
