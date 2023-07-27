@@ -6,6 +6,7 @@ using API.Infrastructure.Implements;
 using API.Middleware;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
+using StackExchange.Redis;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,6 +25,10 @@ builder.Services.AddCors(opt =>
 });
 
 builder.Services.AddDbContext<StoreContext>(options=> options.UseSqlServer(builder.Configuration.GetConnectionString("SqlConnection") ?? throw new InvalidOperationException("Connection string 'SqlConnection' is not found!")));
+builder.Services.AddSingleton<IConnectionMultiplexer>(x=>{
+    var configuration = ConfigurationOptions.Parse(builder.Configuration.GetConnectionString("Redis") ?? throw new InvalidOperationException("Connection string 'Redis' is not found!"),true);
+    return ConnectionMultiplexer.Connect(configuration);
+});
 var app = builder.Build();
 app.UseCors("CorsPolicy");
 app.UseMiddleware<ExceptionMiddleware>();

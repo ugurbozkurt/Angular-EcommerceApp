@@ -39,6 +39,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.6.122, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -118,6 +124,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.8, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.6.122, )"
             }
           },
           "imports": [
@@ -215,6 +225,10 @@
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.6.122, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

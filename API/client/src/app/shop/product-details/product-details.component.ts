@@ -4,6 +4,7 @@ import { ShopService } from '../shop.service';
 import { ActivatedRoute } from '@angular/router';
 import { BreadcrumbService } from 'xng-breadcrumb';
 
+
 @Component({
   selector: 'app-product-details',
   templateUrl: './product-details.component.html',
@@ -13,10 +14,12 @@ export class ProductDetailsComponent implements OnInit {
   
   product? : IProduct;
   quantity=1;
+
   constructor(private shopService : ShopService,private activateRoute: ActivatedRoute,private breadCrumbService:BreadcrumbService) {}
 
   ngOnInit(): void {
     this.loadProduct();
+
   }
 
   loadProduct(){
@@ -31,8 +34,8 @@ export class ProductDetailsComponent implements OnInit {
     return this.quantity--;
   }
   productQuantityIncMens(){
-
     return this.quantity++;
   }
+
 
 }

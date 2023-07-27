@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "31I9JZbDiu7hS58w6OKjhiWJ33YjgqWrKVYVwH6lWRY/xWPlpHmYg6i6gSZNYlPDw1SrNvDJoXyRyN5aF4fBaw==",
+  "dgSpecHash": "M8SXZE+U68WOe2+cXfH/xkWIFUd2iClEGRWjQ0LnxC1ByS3JNMOceeIpHFsRLu7MSrflRFhub/Bt+6kSeC7Wjw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API.CORE\\API.Core.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Kallax\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.8\\pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
+    "C:\\Users\\Kallax\\.nuget\\packages\\stackexchange.redis\\2.6.122\\stackexchange.redis.2.6.122.nupkg.sha512",
+    "C:\\Users\\Kallax\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

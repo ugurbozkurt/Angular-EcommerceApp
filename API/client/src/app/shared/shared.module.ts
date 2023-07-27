@@ -3,13 +3,15 @@ import { CommonModule } from '@angular/common';
 import { PaginationModule } from 'ngx-bootstrap/pagination';
 import { PagingHeaderComponentComponent } from './components/paging-header-component/paging-header-component.component';
 import { PagerComponent } from './components/pager/pager.component';
-
+import { OrderTotalsComponent } from './order-totals/order-totals.component';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 
 @NgModule({
   declarations: [
     PagingHeaderComponentComponent,
-    PagerComponent
+    PagerComponent,
+    OrderTotalsComponent,
   ],
   imports: [
     CommonModule,
@@ -18,7 +20,11 @@ import { PagerComponent } from './components/pager/pager.component';
   exports : [
     PaginationModule,
     PagingHeaderComponentComponent,
-    PagerComponent
-  ]
+    PagerComponent,
+    OrderTotalsComponent,
+  ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ],
 })
 export class SharedModule { }

@@ -81,3 +81,5 @@ C:\Users\Kallax\Desktop\AngularProjelerim\ecommerceApp\API\API\bin\Debug\net7.0\
 C:\Users\Kallax\Desktop\AngularProjelerim\ecommerceApp\API\API\bin\Debug\net7.0\AutoMapper.dll
 C:\Users\Kallax\Desktop\AngularProjelerim\ecommerceApp\API\API\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\Kallax\Desktop\AngularProjelerim\ecommerceApp\API\API\bin\Debug\net7.0\API.staticwebassets.runtime.json
+C:\Users\Kallax\Desktop\AngularProjelerim\ecommerceApp\API\API\bin\Debug\net7.0\Pipelines.Sockets.Unofficial.dll
+C:\Users\Kallax\Desktop\AngularProjelerim\ecommerceApp\API\API\bin\Debug\net7.0\StackExchange.Redis.dll
