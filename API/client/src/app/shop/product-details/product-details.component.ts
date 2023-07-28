@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { IProduct } from 'src/app/shared/models/IProduct';
 import { ShopService } from '../shop.service';
 import { ActivatedRoute } from '@angular/router';
 import { BreadcrumbService } from 'xng-breadcrumb';
+import { BasketService } from 'src/app/basket/basket.service';
 
 
 @Component({
@@ -12,10 +13,9 @@ import { BreadcrumbService } from 'xng-breadcrumb';
 })
 export class ProductDetailsComponent implements OnInit {
   
-  product? : IProduct;
+  product? : IProduct ;
   quantity=1;
-
-  constructor(private shopService : ShopService,private activateRoute: ActivatedRoute,private breadCrumbService:BreadcrumbService) {}
+  constructor(private shopService : ShopService,private activateRoute: ActivatedRoute,private breadCrumbService:BreadcrumbService,private basketService:BasketService) {}
 
   ngOnInit(): void {
     this.loadProduct();
@@ -35,6 +35,9 @@ export class ProductDetailsComponent implements OnInit {
   }
   productQuantityIncMens(){
     return this.quantity++;
+  }
+  addItemToBasket(){
+    this.basketService.addItemToBasket(this.product!,this.quantity);
   }
 
 

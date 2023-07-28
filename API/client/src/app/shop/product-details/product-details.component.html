@@ -17,7 +17,7 @@
             <span class="font-weight-bold" style="font-size: 1.5em;">{{quantity}}</span>
             <i (click)="productQuantityIncMens()" class="fa fa-plus-circle fa-2x" style="cursor:pointer; margin-left:5px;" ></i>
         </div>
-        <button  class="btn btn-outline-primary mt-3" style="background-color:orange;color:white;border:none;">Add to Cart</button>
+        <button (click)="addItemToBasket()"  class="btn btn-outline-primary mt-3" style="background-color:orange;color:white;border:none;">Add to Cart</button>
         <h6 class="mt-4" *ngIf="quantity">Total Price : {{(product.price * quantity) | currency }}</h6>
     </div>
     <div class="row mt-5">

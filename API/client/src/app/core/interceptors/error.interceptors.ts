@@ -19,7 +19,8 @@ export default class ErrorInterceptor implements HttpInterceptor{
                         {
                             throw error.errors;
                         }
-                        else{
+                        else
+                        {
                             this.toastr.error(error.error.message,error.error.statusCode)        
                         }
                     if(error.status===401)
