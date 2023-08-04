@@ -19,7 +19,8 @@ export class BusyService {
   }
   idle(){
     this.busyRequestConst --;
-    if(this.busyRequestConst<=0){
+    if(this.busyRequestConst<=0)
+    {
       this.busyRequestConst=0;
       this.spinnerService.hide();
     }

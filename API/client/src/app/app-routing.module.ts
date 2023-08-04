@@ -7,11 +7,13 @@ import { NotFoundComponent } from './core/not-found/not-found.component';
 import { ServerErrorComponent } from './core/server-error/server-error.component';
 import { TestErrorComponent } from './core/test-error/test-error.component';
 import { BasketComponent } from './basket/basket.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent, data: { breadcrumb: 'Home' } },
   { path: 'shop', component: ShopComponent, data: { breadcrumb: 'Shop' } },
   { path: 'basket', component: BasketComponent, data: { breadcrumb: 'Basket' } },
+  { path: 'checkout', component: CheckoutComponent, data: { breadcrumb: 'Checkout' } },
  
   {
     path: 'not-found',

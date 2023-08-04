@@ -1,6 +1,14 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API\\wwwroot\\images\\products\\airpad.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\airpad.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API\\wwwroot\\images\\products\\airpods.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\airpods.jpg"
+    },
+    {
       "Id": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API\\wwwroot\\images\\products\\default.png",
       "PackagePath": "staticwebassets\\images\\products\\default.png"
     },
@@ -9,12 +17,24 @@
       "PackagePath": "staticwebassets\\images\\products\\hot.png"
     },
     {
+      "Id": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API\\wwwroot\\images\\products\\ipad.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\ipad.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API\\wwwroot\\images\\products\\mighty.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\mighty.jpg"
+    },
+    {
       "Id": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API\\wwwroot\\images\\products\\polo-shirt.png",
       "PackagePath": "staticwebassets\\images\\products\\polo-shirt.png"
     },
     {
       "Id": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API\\wwwroot\\images\\products\\shampoo.png",
       "PackagePath": "staticwebassets\\images\\products\\shampoo.png"
+    },
+    {
+      "Id": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API\\wwwroot\\images\\products\\shick.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\shick.jpg"
     },
     {
       "Id": "C:\\Users\\Kallax\\Desktop\\AngularProjelerim\\ecommerceApp\\API\\API\\wwwroot\\images\\products\\shoe.png",

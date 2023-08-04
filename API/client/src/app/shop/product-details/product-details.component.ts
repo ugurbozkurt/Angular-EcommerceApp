@@ -25,7 +25,7 @@ export class ProductDetailsComponent implements OnInit {
   loadProduct(){
     this.shopService.getProduct(Number(this.activateRoute.snapshot.paramMap.get('id'))).subscribe(response =>{
       this.product = response;
-      this.breadCrumbService.set('@productDetails',this.product.productName);
+      this.breadCrumbService.set('@productDetails',this.product.productType);
     },(error: any) =>{
       console.log(error);
     })

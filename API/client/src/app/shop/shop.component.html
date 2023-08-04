@@ -14,7 +14,9 @@
             background-color: #6c757d;
             color:white;
         }
-        
+        .denemex:hover{
+            background-color: #f5f5f5;
+        }
     </style>
 </head>
 
@@ -26,22 +28,22 @@
                 <option *ngFor="let sort of this.shopParams.sortOptions" [value]="sort.value">{{sort.name}}</option>
             </select>
             <ul class="list-group">
-                <h5 class="text-warning ml-3">Brands</h5>
-                <li class="list-group-item" *ngFor="let item of brands"
+                <h5 class="text-warning ml-3 ">Types</h5>
+                <li class="denemex list-group-item" style="cursor:pointer;" *ngFor="let item of types"
+                [class.active]="item.id === this.shopParams.typeId"
+                [value]="item.id"
+                (click)="onTypeSelected(item.id)"
+                >{{item.name}}</li>
+            </ul>
+            <ul class="list-group">
+                <h5 class="text-warning ml-3 mt-3">Brands</h5>
+                <li class="denemex list-group-item" style="cursor:pointer;" *ngFor="let item of brands"
                 [class.active]="item.id === this.shopParams.brandId"
                 [value]="item.id"
                 (click)="onBrandSelected(item.id)"
                 >{{item.name}}</li>
             </ul>
-            <ul class="list-group">
-                <h5 class="text-warning ml-3 mt-3">Types</h5>
-                <li class="list-group-item" *ngFor="let item of types"
-                [class.active]="item.id === this.shopParams.typeId"
-                [value]="item.id"
-                (click)="onTypeSelected(item.id)"
-                >{{item.name}}</li>
 
-            </ul>
         </section>
         <section class="col-9">
 
@@ -67,15 +69,15 @@
                     <app-product-item [product]="product"></app-product-item>
                 </div> 
             </div>
-            <div class="d-flex justify-content-center " *ngIf="this.totalCount>0">
+            <div class="d-flex justify-content-center mt-3" *ngIf="this.totalCount>0">
 
-            <app-pager-component
-            [totalCount]="totalCount"
-            [pageNumber]="shopParams.pageNumber"
-            [pageSize]="shopParams.pageSize"
-            (pageChange)="onPageChanged($event)"
-            >
-            </app-pager-component>
+                <app-pager-component
+                [totalCount]="totalCount"
+                [pageNumber]="shopParams.pageNumber"
+                [pageSize]="shopParams.pageSize"
+                (pageChange)="onPageChanged($event)"
+                >
+                </app-pager-component>
             
         </div>
         </section>

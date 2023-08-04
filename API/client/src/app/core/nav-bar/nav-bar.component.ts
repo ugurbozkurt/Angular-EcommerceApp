@@ -12,14 +12,8 @@ export class NavBarComponent implements OnInit {
 
     basket$!  : Observable<IBasket | null>
     constructor(private basketService: BasketService) {
-      
     }
     ngOnInit(): void {
       this.basket$ = this.basketService.basket$;
     }
-
-    /**
-     *
-     */
-
 }

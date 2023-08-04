@@ -12,8 +12,7 @@ export class SectionHeaderComponent implements OnInit {
   breadcrumbs$! : Observable<any[]>;
 
   constructor(private breadCrumbService:BreadcrumbService) {
-    
-    
+
   }
 
   ngOnInit(): void {
