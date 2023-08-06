@@ -46,7 +46,6 @@ export class ShopService {
   getProduct(id: number) {
     return this.http.get<IProduct>(this.baseurl + 'products/' + id);
   }
-
   getBrands() {
     return this.http.get<IBrand[]>(this.baseurl + 'products/brands');
   }

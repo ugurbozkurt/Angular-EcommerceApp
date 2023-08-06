@@ -32,8 +32,7 @@ export class ShopComponent implements OnInit {
         this.shopParams.pageNumber = response!.pageIndex;
         this.shopParams.pageSize = response!.pageSize;
         this.totalCount = response!.count;
-        console.log(this.shopParams.pageNumber);
-        console.log(this.shopParams.pageSize);
+
       },
       (err) => {
         console.log(err);
@@ -75,7 +74,8 @@ export class ShopComponent implements OnInit {
     this.getProducts();
   }
   onPageChanged(event: any) {
-    if (this.shopParams.pageNumber !== event) {
+    if (this.shopParams.pageNumber !== event) 
+    {
       this.shopParams.pageNumber = event;
       this.getProducts();
     }

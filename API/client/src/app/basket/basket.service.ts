@@ -61,7 +61,6 @@ export class BasketService {
       map((basket: IBasket | any) => {
         this.basketSource.next(basket);
         this.calculateTotals();
-        console.log("getCurrentBasketValue=>",this.getCurrentBasketValue());
       })
     );
   }
