@@ -11,28 +11,14 @@
     </nav>
     
     <div class="d-flex align-items-center">
-        <a routerLink="/basket" class="position-relative" style="margin-left:20px;">
-            <i class="fa fa-shopping-cart mr-5 text-dark" style="font-size:24px;"></i>
-            <div *ngIf="(basket$ | async) as basket" class="cart-no ">{{basket.items.length}}</div>
+        <a routerLink="/basket" class="position-relative" style="margin-right:20px;">
+            <i class="kxg fa fa-shopping-cart mr-5 text-dark" style="font-size:24px;"></i>
+            <div *ngIf="(basket$ | async) as basket" class="kxg cart-no " >{{basket.items.length}}</div>
         </a>
         <ng-container *ngIf="(currentUserName$ | async) ===null ">
         <a routerLink="/account/login" class="btn btn-outline-secondary" style="margin-left:35px;font-weight: 600;background-color:#6c757d;color:white;" href="#">Login</a>
         <a routerLink="/account/register" class="btn btn-outline-secondary" style="margin-left:10px;font-weight: 600;background-color: #6c757d;color:white;"  href="#">Sign up</a>
       </ng-container>
-
-      <!-- <ng-container *ngIf="(currentUserName$ | async) !==null ">
-        <div class="dropdown" style="margin-left:20px;" >
-          <button *ngIf="(currentUserName$ | async) as user" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #6c757d;color:white;">
-            Welcome {{user.displayName}}
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" routerLink="/account/profile">Profile</a></li>
-            <li><a class="dropdown-item" routerLink="/account/orders">Orders</a></li>
-            <li><a class="dropdown-item" (click)="logout()">Logout</a></li>
-          </ul>
-        </div>
-      </ng-container> -->
-
       <ng-container *ngIf="(currentUserName$ | async) !==null">
         <div class="dropdown ml-3 mr-5" dropdown style="margin-left:20px; ">
           <button class="dropdown-toggle" *ngIf="(currentUserName$ | async) as user" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #6c757d;color:white;" dropdownToggle>

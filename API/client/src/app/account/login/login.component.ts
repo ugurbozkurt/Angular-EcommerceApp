@@ -9,7 +9,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export default class LoginComponent implements OnInit {
-
+  denememail : string = "ugurbozkurt@ugurbozkurt.com"
   loginForm! : FormGroup;
   returnUrl!:string;
   constructor(private accountService: AccountService,private router: Router,private activatedRoute:ActivatedRoute) {
